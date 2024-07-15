@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Document</title>
+    <title>Dice Roller</title>
+    <style>
+.btn{
+    height: 40px;
+    width: 70px;
+    border-radius: 50px 50px;
+    background-color: cadetblue;
+}
+.container{
+    text-align: center;
+    margin-top: 200px;
+}
+    </style>
 </head>
 
 <body>
+    <div class="container">
     <img src="dice.png" alt="" id="dice" height="100px" />
     <br> <br>
-    <button type="button" onclick="rollDice()">Roll The Dice</button>
-
+    <button type="button" class="btn" onclick="rollDice()">ROLL</button>
+</div>
     <script>
         const diceImg = document.getElementById("dice");
         function rollDice() {
